@@ -20,6 +20,8 @@ Linkmir is a new social media platform with one caveat - you can only post http/
 The application is a headless API written in JavaScript for use on a Nodejs server. As such, a handful of npm packages where used. Here is the list of the higher level packages:
 * Express
 * Mongoose
+* Request
+* Jasmine-node
 
 The application connects to a free mongoDB server set up. The password has been inconveniently removed and replaced with `<PASSWORD>` in `server\services\linkmirservice.js`. Password available upon request.
 
@@ -28,6 +30,12 @@ The application connects to a free mongoDB server set up. The password has been 
 ## ➤ Development server
 
 Install dependencies with `npm install`. To run the local site, use `npm run devStart` which will start listening on port 8080 if it is available. The server will automatically reload if you change any of the source files. If you wish to just run it without devStart, run `node server/app.js` to start the project.
+
+## ➤ Integration Tests
+
+There are integration tests using Jasmine-node and request to ping the database for known values. In time, these integration tests would be joined with unit tests and be integrated together with the server so that the server does not need to be run separately. Additionally, there would be a test database the system would connect to in order to both not interfere with production, but also make sure the tests know exactly what they need to know.
+
+To run the tests make sure that the server is running, and then in the root of the application call `npm test`.
 
 (#api)
 
@@ -191,4 +199,3 @@ Install dependencies with `npm install`. To run the local site, use `npm run dev
 
   * **Code:** 400 BAD REQUEST ERROR <br />
     **Content:** `{ error : "No Results exist" }`
-	
