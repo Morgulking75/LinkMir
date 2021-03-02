@@ -1,19 +1,8 @@
-(#linkmir)
-
 # ➤ LinkMir
 
 Welcome to LinkMir! 
 
 Linkmir is a new social media platform with one caveat - you can only post http/https links - no comments, no images, just links.
-
-## Table of contents
-* [Intro](#linkmir)
-* [Tech Stack](#techstack)
-* [Development server](#development-server)
-* [Setup](#setup)
-* [APi](#api)
-
-(#techstack)
 
 ## ➤ Tech Stack
 
@@ -23,13 +12,10 @@ The application is a headless API written in JavaScript for use on a Nodejs serv
 
 The application connects to a free mongoDB server set up. The password has been inconveniently removed and replaced with `<PASSWORD>` in `server\services\linkmirservice.js`. Password available upon request.
 
-(#development-server)
-
 ## ➤ Development server
 
 Install dependencies with `npm install`. To run the local site, use `npm run devStart` which will start listening on port 8080 if it is available. The server will automatically reload if you change any of the source files. If you wish to just run it without devStart, run `node server/app.js` to start the project.
 
-(#api)
 
 ## ➤ API Endpoints
 
