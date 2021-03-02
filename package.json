@@ -1,0 +1,26 @@
+{
+	"name": "linkmir",
+	"version": "1.0.0",
+	"description": "A Simple URL Shortener",
+	"main": "server/app.js",
+	"scripts": {
+		"devStart": "nodemon server/app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Morgulking75/LinkMir.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Morgulking75/LinkMir/issues"
+	},
+	"homepage": "https://github.com/Morgulking75/LinkMir#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^5.11.18"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
+}
